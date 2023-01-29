@@ -4,7 +4,9 @@ import { Loader, Card, FormField } from "../components";
 
 const RenderCards = ({ data, title }) => {
   if (data?.length > 0) {
-    return data.map((post) => <Card key={post._id} {...post} />);
+    return (
+    data.map((post) => <Card key={post._id} {...post} />)
+    );
   }
 
   return (
@@ -28,7 +30,14 @@ const Home = () => {
         </p>
       </div>
       <div className="mt-16">
-        <FormField />
+        {/* <FormField */}
+         {/* labelName="Search posts"
+         type="text"
+         name="text"
+         placeholder="Search something..."
+         value={searchText}
+         handleChange={handleSearchChange}
+        /> */}
       </div>
       <div className="mt-10">
         {loading ? (
@@ -45,9 +54,13 @@ const Home = () => {
             )}
             <div className="gird lg:grid-cols-4 sm:grid-cols-3 xs:grid-cols-2 grid-cols-1 gap-3">
               {searchText ? (
-                <RenderCards data={[]} title="No Search Results Found" />
+                <RenderCards
+                 data={[]}
+                  title="No Search Results Found" />
               ) : (
-                <RenderCards data={[]} title="No Posts found" />
+                <RenderCards 
+                data={[]} 
+                title="No Posts found" />
               )}
             </div>
           </>

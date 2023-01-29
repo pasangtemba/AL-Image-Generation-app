@@ -24,7 +24,7 @@ const CreatePost = () => {
   };
   const genetrateImage = () => {};
 
-  const handelSubmit = () => {};
+  const handleSubmit = () => {};
 
   return (
     <section className="max-w-7xl mx-auto">
@@ -32,13 +32,12 @@ const CreatePost = () => {
         <h1 className="font-extrablod text-[#22328] text-[32px]">Create</h1>
         <p className="mt-2 text-[66e75] text-[16px] max-w[500px]">
           Create imaginative and visitually stunning image through DALL-E AI and
-          share them with the community
-        </p>
+          share them with the community </p>
       </div>
-      <form className="mt-16 max-w-3xl" onSubmit={handelSubmit}>
+      <form className="mt-16 max-w-3xl" onSubmit={handleSubmit}>
         <div className="flex flex-col gap-5">
           <FormField
-            labelName="Your Name"
+            labelName="Your name"
             name="name"
             type="text"
             placeholder="  Pasang Temba Sherpa"
