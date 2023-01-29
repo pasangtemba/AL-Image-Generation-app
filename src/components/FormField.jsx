@@ -1,14 +1,15 @@
 import React from 'react'
 
-const FormField = ({LabelName, type , name, placeholder,vlaue, handelChange, isSurpriseMe, handleSurprideMe}) => {
+const FormField = ({ LabelName, type,  name, placeholder, vlaue, handleChange, isSurpriseMe, handleSurprideMe }) => {
   return (
     <div>
      <div className='flex items-center gap-2 mb-2'>
       <label
-      htmlFor={name}
-      className="block text-sm font-medium text-gray-900"
-      >
-         {LabelName}
+         htmlFor={name}
+          className="block text-sm font-medium text-gray-900">
+          {LabelName}
+        
+
       </label>
      {  isSurpriseMe && (
       <button 
@@ -26,11 +27,12 @@ const FormField = ({LabelName, type , name, placeholder,vlaue, handelChange, isS
      name={name}
      placeholder={placeholder}
      value={vlaue}
-     onChange={handelChange}
+     onChange={handleChange}
      required
      className='bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#4649ff] focuss-border-[#4649ff] outline-none block w-full- p-3'
      />
     </div>
+    
   )
 }
 
