@@ -22,7 +22,16 @@ const CreatePost = () => {
     const randomPrompt = getRandomPrompt(form.prompt);
     setForm({ ...form, prompt: randomPrompt });
   };
-  const genetrateImage = () => {};
+  const genetrateImage = () => {
+    if (form.prompt){
+      try {
+        
+      }
+      catch (error) {
+        console.log(error);
+      }
+    }
+  };
 
   const handleSubmit = () => {};
 

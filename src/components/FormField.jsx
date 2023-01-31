@@ -1,14 +1,7 @@
 import React from 'react';
 
 const FormField = ({
-  labelName,
-  type,
-  name,
-  placeholder,
-  value,
-  handleChange,
-  isSurpriseMe,
-  handleSurpriseMe,
+  labelName, type,  name, placeholder, value, handleChange, isSurpriseMe, handleSurpriseMe,
 }) => (
   <div>
     <div className="flex items-center gap-2 mb-2">
